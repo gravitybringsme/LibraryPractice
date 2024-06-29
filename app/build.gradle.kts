@@ -48,6 +48,7 @@ dependencies {
     implementation(libs.circleimageview)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)  // CircleImageView 라이브러리 추가
+    implementation(libs.photoview) // PhotoView 라이브러리 추가
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
