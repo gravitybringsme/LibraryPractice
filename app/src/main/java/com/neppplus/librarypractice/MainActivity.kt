@@ -2,10 +2,12 @@ package com.neppplus.librarypractice
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.bumptech.glide.Glide
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,5 +27,12 @@ class MainActivity : AppCompatActivity() {
             val myIntent = Intent(this, ViewProfilePhotoActivity::class.java)
             startActivity(myIntent)
         }
+
+        //인터넷에 있는 이미지 를 이미지뷰에 대입
+
+        val imageView = findViewById<ImageView>(R.id.lectureImg1);
+
+
+        Glide.with(this).load("https://goo.gl/gEgYUd").into(imageView);
     }
 }
