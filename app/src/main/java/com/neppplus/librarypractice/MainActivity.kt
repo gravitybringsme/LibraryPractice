@@ -1,5 +1,6 @@
 package com.neppplus.librarypractice
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,14 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val profileImg = findViewById<de.hdodenhof.circleimageview.CircleImageView>(R.id.profileImg)
+
+        profileImg.setOnClickListener {
+            // 프로필 크게 보는 액티비티
+            val myIntent = Intent(this, ViewProfilePhotoActivity::class.java)
+            startActivity(myIntent)
         }
     }
 }
