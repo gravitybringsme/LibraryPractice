@@ -12,6 +12,7 @@ constraintlayout = "2.1.4"
 circleimageview = "3.1.0"
 photoview = "2.3.0"  # 추가된 부분
 glide = "4.16.0"  # 추가된 부분
+tedpermission = "3.3.0"  # 추가된 부분
 navigationFragmentKtx = "2.6.0"
 navigationUiKtx = "2.6.0"
 
@@ -29,6 +30,10 @@ androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navi
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 photoview = { group = "com.github.chrisbanes", name = "PhotoView", version.ref = "photoview" }
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }  # 추가된 부분
+tedpermissionNormal = { group = "io.github.ParkSangGwon", name = "tedpermission-normal", version.ref = "tedpermission" }  # 추가된 부분
+tedpermissionCoroutine = { group = "io.github.ParkSangGwon", name = "tedpermission-coroutine", version.ref = "tedpermission" }  # 추가된 부분
+tedpermissionRx2 = { group = "io.github.ParkSangGwon", name = "tedpermission-rx2", version.ref = "tedpermission" }  # 추가된 부분
+tedpermissionRx3 = { group = "io.github.ParkSangGwon", name = "tedpermission-rx3", version.ref = "tedpermission" }  # 추가된 부분
 
 
 [plugins]

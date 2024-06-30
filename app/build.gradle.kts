@@ -50,6 +50,10 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)  // CircleImageView 라이브러리 추가
     implementation(libs.photoview) // PhotoView 라이브러리 추가
     implementation(libs.glide) // Glide 라이브러리 추가
+    implementation(libs.tedpermissionNormal) // TedPermission Normal 추가
+    implementation(libs.tedpermissionCoroutine) // TedPermission Coroutine 추가
+    implementation(libs.tedpermissionRx2) // TedPermission RxJava2 추가
+    implementation(libs.tedpermissionRx3) // TedPermission RxJava3 추가
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
