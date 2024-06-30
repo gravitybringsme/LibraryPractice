@@ -2,6 +2,7 @@ package com.neppplus.librarypractice
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -34,5 +35,13 @@ class MainActivity : AppCompatActivity() {
 
 
         Glide.with(this).load("https://goo.gl/gEgYUd").into(imageView);
+
+        //전화걸기 버튼 누르면 => 권한 확인 / 전화 연결
+
+        val callBtn = findViewById<Button>(R.id.callBtn);
+
+        callBtn.setOnClickListener {
+            //라이브러리 활용 -> 전화 권한 확인 -> 실제 전화 연결
+        }
     }
 }
